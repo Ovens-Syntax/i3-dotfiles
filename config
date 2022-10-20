@@ -8,8 +8,10 @@
 # Github: https://github.com/Ovens-Syntax
 # Ascii Generator: https://www.texttool.com/ascii-font#p=display&f=Standard&t=i3%20config
 
-#polybar
+#startups
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id alacritty --hold -e neofetch --title startup
+for_window [title="startup"] floating toggle
 
 #defaults 
 set $mod Mod4
