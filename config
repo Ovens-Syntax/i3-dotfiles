@@ -10,7 +10,6 @@
 
 #startups
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id alacritty --hold -e neofetch --title startup
 for_window [title="startup"] floating toggle
 
 #defaults 
@@ -18,7 +17,7 @@ set $mod Mod4
 floating_modifier $mod
 
 #theming
-for_window [class="^.*"] border pixel 0, title_format " %title "
+for_window [class="^.*"] border pixel 2, title_format " %title "
 gaps inner 10
 gaps outer 10
 
